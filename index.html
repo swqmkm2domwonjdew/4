@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>无聊</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #4bc0c8, #c779d0, #feac5e);
+      }
+      .box {
+        height: 80vh;
+        width: 70%;
+        max-width: 600px;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 4px;
+        box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+          rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        hyphens: auto;
+        text-align: justify;
+        color: #333;
+        font-size: 17px;
+        line-height: 1.7;
+        letter-spacing: 0.034em;
+        font-family: "思源黑体";
+        overflow-y: scroll;
+      }
+      .box::-webkit-scrollbar {
+        display: none; /* Chrome Safari */
+      }
+    </style>
+</head>
+<body>
+  <div class="xxx" align="center">
+      <div style="color:rgb(255, 190, 190);font-size:50px">无聊</color:></div>
+      <p>无聊的请点击下方</p>
+      <button id="yxq" onclick="yxq1()">0</button>
+      <script>
+        function yxq1(){
+              let yxq2 = window.document.getElementById('yxq');
+              let yxq3 = parseInt(yxq2.innerText);
+              let tls = yxq3 +1;
+              yxq2.innerText = tls;
+              return
+          }
+      </script>
+      <form name="from1" id="form1" action="upload.php">
+        <label>你无聊吗：</label>
+        <input name="sex" type="radio" value='tanglang'/><label>无聊</label>
+        <input name="sex" type="radio" value="jingangtanglang"/><label>无聊</label>
+        <input name="sex" type="radio" value="sageluosi"/><label>无聊</label>
+        <br>
+        <label>你真的无聊吗：</label>
+        <input name='subject' type="checkbox" value="clever"><label>无聊</label>
+        <input name='subject' type="checkbox" value="zhizhang" ><label>很无聊</label>
+        <input name='subject' type="checkbox" value="annoying"/><label>非常无聊</label>
+        <input name='subject' type="checkbox" value="messenger"/><label>超级无聊</label>
+        
+     </form>
+  </body>
+</html>
